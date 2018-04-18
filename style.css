@@ -1,0 +1,6 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto';
+    background-color: #F3F3F3;
+}
