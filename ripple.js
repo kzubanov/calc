@@ -33,5 +33,5 @@ function rippleConstructor(className) {
 
 
 //добавляем рипл разного цвета разным кнопкам
-addMulitListener( document.querySelectorAll('.ripple-button-normal'), 'click', rippleConstructor('ripple-normal') );
-addMulitListener( document.querySelectorAll('.ripple-button-dark'), 'click', rippleConstructor('ripple-dark') );
+addMulitListener( document.querySelectorAll('.ripple__button_normal'), 'click', rippleConstructor('ripple-normal') );
+addMulitListener( document.querySelectorAll('.ripple__button_dark'), 'click', rippleConstructor('ripple-dark') );

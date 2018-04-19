@@ -1,7 +1,7 @@
 .calc {
     overflow: hidden;
     margin: 80px auto;
-    width: 272px;
+    width: 420px;
     padding: 16px;
     font-weight: 300;
     color: #1A1A1A;
@@ -11,7 +11,7 @@
 }
 
 
-.calc-row {
+.calc__row {
     display: flex;
     flex-direction: row;
 }
@@ -21,14 +21,14 @@
     background-position: center;
 }
 */
-.calc-devider {
+.calc__devider {
     background-color: #F4F4F4;
     height: 1px;
     margin-top: 8px;
     margin-bottom: 8px;
 }
 
-.calc-text-field {
+.calc__text-field {
     font-weight: 500; 
     font-size: 54px;
     line-height: 72px;
@@ -36,11 +36,11 @@
     padding-right: 16px;
 }
 
-.calc-button {
+.calc__button {
     cursor: pointer;
 }
 
-.calc-button, .calc-placeholder {
+.calc__button, .calc__placeholder {
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
@@ -56,18 +56,25 @@
     flex-grow: 1; 
 }
 
-.calc-button-action {
+.calc__button_action {
     color: #A600FF;
 }
 
-.calc-button:not(.calc-button-equal) {
+.calc__button {
     background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' fill='rgba(44, 0, 68, 0.04'><circle cx='20' cy='20' r='20' /></svg>")  no-repeat;
     background-size: 0px 0px;
     background-position: center;
     transition: background-size 0.1s ease-out;
 }
 
-.calc-button-equal {
+.calc__button_last-action {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' fill='rgba(166, 0, 255, 0.24'><circle cx='20' cy='20' r='20' /></svg>")  no-repeat;
+    background-size: 60px 60px;
+    background-position: center;
+    transition: background-size 0.1s ease-out;
+}
+
+.calc__button_equal {
     color: white;
     background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' fill='#A600FF'><circle cx='20' cy='20' r='20' /></svg>")  no-repeat;
     background-position: center;
@@ -80,16 +87,16 @@
     background-position: center;
 }
 */
-.calc-history {
+.calc__history {
     line-height: 24px;
     margin-top: 12px;
     height: 24px;
     font-size: 18px;
     color: #A9A9A9;
     text-align: right;
-    padding-right: 16px;
+    padding-right: 20px;
 }
 
-.calc-button-equal:hover, .calc-button:hover {
+.calc__button_equal:hover, .calc__button:hover {
     background-size: 60px 60px;
 }
